@@ -4,11 +4,11 @@ from announcements.models import Announcement, Dismissal
 
 
 class AnnouncementAdmin(admin.ModelAdmin):
-    list_display = ("title", "creator", "creation_date", "members_only")
-    list_filter = ("members_only",)
+    list_display = ("title", "creator", "creation_date", "members_only", "announcement_type")
+    list_filter = ("members_only", "announcement_type", "dismissal_type")
     fieldsets = [
         (None, {
-            "fields": ["title", "content", "site_wide", "members_only", "publish_start", "publish_end", "dismissal_type"],
+            "fields": ["title", "content", "site_wide", "members_only", "publish_start", "publish_end", "announcement_type", "dismissal_type"],
         }),
     ]
 

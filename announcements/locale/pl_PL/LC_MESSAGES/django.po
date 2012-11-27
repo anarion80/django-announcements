@@ -1,0 +1,104 @@
+# django-announcements Polish translation.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Jan Migalski <anarion@go2.pl>, 2012.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-11-16 10:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Jan Migalski <anarion@go2.pl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: Polish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\models.py:18
+msgid "Info"
+msgstr ""
+
+#: .\models.py:19
+msgid "Error"
+msgstr ""
+
+#: .\models.py:20
+msgid "Success"
+msgstr ""
+
+#: .\models.py:21
+msgid "Warning"
+msgstr ""
+
+#: .\models.py:28
+msgid "No Dismissals Allowed"
+msgstr "Nie można ukrywać"
+
+#: .\models.py:29
+msgid "Session Only Dismissal"
+msgstr "Można ukrywać w czasie sesji"
+
+#: .\models.py:30
+msgid "Permanent Dismissal Allowed"
+msgstr "Zalogowani mogą ukrywać całkowicie"
+
+#: .\models.py:33
+msgid "title"
+msgstr "tytuł"
+
+#: .\models.py:34
+msgid "content"
+msgstr "treść"
+
+#: .\models.py:35
+msgid "creator"
+msgstr "autor"
+
+#: .\models.py:36
+msgid "creation_date"
+msgstr "data utworzenia"
+
+#: .\models.py:37
+msgid "site wide"
+msgstr "dla całej witryny"
+
+#: .\models.py:38
+msgid "members only"
+msgstr "tylko dla zarejestrowanych użytkowników"
+
+#: .\models.py:39
+#, fuzzy
+msgid "announcement type"
+msgstr "typ ogłoszenia"
+
+#: .\models.py:40
+#, fuzzy
+msgid "dismissal type"
+msgstr "możliwość ukrycia?"
+
+#: .\models.py:41
+msgid "publish_start"
+msgstr "start publikacji"
+
+#: .\models.py:42
+msgid "publish_end"
+msgstr "koniec publikacji"
+
+#: .\models.py:55
+msgid "announcement"
+msgstr "ogłoszenie"
+
+#: .\models.py:56
+msgid "announcements"
+msgstr "ogłoszenia"
+
+#: .\models.py:66
+msgid "dismissal"
+msgstr "ukryte ogłoszenie"
+
+#: .\models.py:67
+msgid "dismissals"
+msgstr "ukryte ogłoszenia"

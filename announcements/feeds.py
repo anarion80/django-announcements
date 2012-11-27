@@ -1,5 +1,4 @@
-import datetime
-
+from django.utils import timezone
 from django.db.models import Q
 
 from atomformat import Feed
@@ -21,9 +20,9 @@ class AnnouncementsBase(Feed):
     
     def items(self):
         return Announcement.objects.filter(
-            publish_start__lte=datetime.datetime.now()
+            publish_start__lte=timezone.now()
         ).filter(
-            Q(publish_end__isnull=True)|Q(publish_end__gt=datetime.datetime.now())
+            Q(publish_end__isnull=True)|Q(publish_end__gt=timezone.now())
         ).filter(
             site_wide=True
         ).exclude(
