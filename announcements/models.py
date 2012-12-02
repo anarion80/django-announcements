@@ -13,13 +13,13 @@ A single announcement.
     TYPE_INFO = 'alert-info'
     TYPE_ERROR = 'alert-error'
     TYPE_SUCCESS = 'alert-success'
-    TYPE_WARNING = ''
-    TYPE = (
+    TYPE_WARNING = 'alert-warning'
+    TYPE = [
         (TYPE_INFO, _('Info')),
         (TYPE_ERROR, _('Error')),
         (TYPE_SUCCESS, _('Success')),
         (TYPE_WARNING, _('Warning')),
-)
+    ]
     DISMISSAL_NO = 1
     DISMISSAL_SESSION = 2
     DISMISSAL_PERMANENT = 3
@@ -36,7 +36,7 @@ A single announcement.
     creation_date = models.DateTimeField(_("creation_date"), default=timezone.now)
     site_wide = models.BooleanField(_("site wide"), default=False)
     members_only = models.BooleanField(_("members only"), default=False)
-    announcement_type = models.IntegerField(_("announcement type"), choices=TYPE, default=TYPE_WARNING)
+    announcement_type = models.CharField(_("announcement type"), choices=TYPE, default=TYPE_WARNING, max_length=20)
     dismissal_type = models.IntegerField(_("dismissal type"), choices=DISMISSAL_CHOICES, default=DISMISSAL_SESSION)
     publish_start = models.DateTimeField(_("publish_start"), default=timezone.now)
     publish_end = models.DateTimeField(_("publish_end"), blank=True, null=True)
